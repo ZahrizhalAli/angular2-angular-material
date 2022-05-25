@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ data.name }}</mat-card-title>
+    <mat-card-subtitle>{{ data.address }}</mat-card-subtitle>
+  </mat-card-header>
+  <img [src]="data.picture" alt="Photo of a Shiba Inu" />
+  <mat-card-content>
+    <p>Company - {{ data.company }}</p>
+    <p>Phone - {{ data.phone }}</p>
+    <p>Age - {{ data.age }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button class="btn btn-primary m-2">LIKE</button>
+    <button class="btn btn-primary m-2">SHARE</button>
+  </mat-card-actions>
+</mat-card>
