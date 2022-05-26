@@ -11,7 +11,9 @@
     <p>Age - {{ data.age }}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="btn btn-primary m-2">LIKE</button>
-    <button class="btn btn-primary m-2">SHARE</button>
+    <button class="btn btn-primary m-2" (click)="triggerLike(data)">
+      LIKE
+    </button>
+    {{ data.index }} Likes
   </mat-card-actions>
 </mat-card>

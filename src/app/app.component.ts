@@ -152,4 +152,18 @@ export class AppComponent {
       address: '872 Forest Place, Tonopah, Nevada, 8544',
     },
   ];
+
+  thedata: {
+    index: number;
+    picture: String;
+    age: number;
+    name: String;
+    company: String;
+    phone: String;
+    address: String;
+  };
+
+  getData() {
+    this.thedata.index += 1;
+  }
 }
