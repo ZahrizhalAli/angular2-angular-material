@@ -15,6 +15,7 @@ export class AppComponent {
       company: 'STUCCO',
       phone: '+62 (938) 581-2473',
       address: '739 Dewey Place, Deputy, Ohio, 2479',
+      like: 0,
     },
     {
       index: 1,
@@ -24,6 +25,7 @@ export class AppComponent {
       company: 'ZEDALIS',
       phone: '+62 (953) 534-3363',
       address: '661 Logan Street, Freeburn, Virgin Islands, 9470',
+      like: 0,
     },
     {
       index: 2,
@@ -33,6 +35,7 @@ export class AppComponent {
       company: 'MANGLO',
       phone: '+62 (949) 455-2209',
       address: '369 Royce Place, Taft, Texas, 1432',
+      like: 0,
     },
     {
       index: 3,
@@ -42,6 +45,7 @@ export class AppComponent {
       company: 'CUJO',
       phone: '+62 (821) 559-2605',
       address: '424 Sedgwick Street, Keyport, Illinois, 7708',
+      like: 0,
     },
     {
       index: 4,
@@ -51,6 +55,7 @@ export class AppComponent {
       company: 'ENERFORCE',
       phone: '+62 (891) 542-3727',
       address: '569 Ellery Street, Crawfordsville, Florida, 7162',
+      like: 0,
     },
     {
       index: 5,
@@ -60,6 +65,7 @@ export class AppComponent {
       company: 'BISBA',
       phone: '+62 (967) 536-2793',
       address: '224 Cove Lane, Canoochee, North Carolina, 782',
+      like: 0,
     },
     {
       index: 6,
@@ -69,6 +75,7 @@ export class AppComponent {
       company: 'ELITA',
       phone: '+62 (914) 584-3490',
       address: '796 Independence Avenue, Hachita, Palau, 6767',
+      like: 0,
     },
     {
       index: 7,
@@ -78,6 +85,7 @@ export class AppComponent {
       company: 'IMKAN',
       phone: '+62 (886) 523-2970',
       address: '664 Imlay Street, Wheatfields, Connecticut, 9667',
+      like: 0,
     },
     {
       index: 8,
@@ -87,6 +95,7 @@ export class AppComponent {
       company: 'GENMEX',
       phone: '+62 (914) 543-2310',
       address: '748 Church Avenue, Stonybrook, Tennessee, 5698',
+      like: 0,
     },
     {
       index: 9,
@@ -96,6 +105,7 @@ export class AppComponent {
       company: 'TASMANIA',
       phone: '+62 (857) 510-3693',
       address: '777 Mill Avenue, Kula, New Hampshire, 4831',
+      like: 0,
     },
     {
       index: 10,
@@ -105,6 +115,7 @@ export class AppComponent {
       company: 'ISBOL',
       phone: '+62 (933) 519-3612',
       address: '673 Howard Alley, Darlington, Georgia, 3509',
+      like: 0,
     },
     {
       index: 11,
@@ -114,6 +125,7 @@ export class AppComponent {
       company: 'ISOSPHERE',
       phone: '+62 (981) 570-2396',
       address: '870 Oriental Boulevard, Hiwasse, Michigan, 2515',
+      like: 0,
     },
     {
       index: 12,
@@ -123,6 +135,7 @@ export class AppComponent {
       company: 'UXMOX',
       phone: '+62 (839) 535-2011',
       address: '226 Quentin Street, Reinerton, California, 5509',
+      like: 0,
     },
     {
       index: 13,
@@ -132,6 +145,7 @@ export class AppComponent {
       company: 'PROSURE',
       phone: '+62 (955) 409-3870',
       address: '734 Landis Court, Wakulla, Marshall Islands, 5890',
+      like: 0,
     },
     {
       index: 14,
@@ -141,6 +155,7 @@ export class AppComponent {
       company: 'INSURETY',
       phone: '+62 (957) 464-3235',
       address: '915 Sackman Street, Alamo, Arkansas, 945',
+      like: 0,
     },
     {
       index: 15,
@@ -150,6 +165,7 @@ export class AppComponent {
       company: 'XANIDE',
       phone: '+62 (953) 536-2667',
       address: '872 Forest Place, Tonopah, Nevada, 8544',
+      like: 0,
     },
   ];
 
@@ -161,9 +177,10 @@ export class AppComponent {
     company: String;
     phone: String;
     address: String;
+    like?: number;
   };
 
   getData() {
-    this.thedata.index += 1;
+    this.thedata.like += 1;
   }
 }

@@ -14,6 +14,7 @@ export class CardComponentComponent implements OnInit {
     company: String;
     phone: String;
     address: String;
+    like?: number;
   };
 
   @Output() likeClicked = new EventEmitter<{
@@ -24,6 +25,7 @@ export class CardComponentComponent implements OnInit {
     company: String;
     phone: String;
     address: String;
+    like?: number;
   }>();
   constructor() {}
 
@@ -37,6 +39,7 @@ export class CardComponentComponent implements OnInit {
     company: String;
     phone: String;
     address: String;
+    like?: number;
   }) {
     //
     this.likeClicked.emit(data);

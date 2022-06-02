@@ -14,6 +14,6 @@
     <button class="btn btn-primary m-2" (click)="triggerLike(data)">
       LIKE
     </button>
-    {{ data.index }} Likes
+    {{ data.like ? data.like : 0 }} Likes
   </mat-card-actions>
 </mat-card>
