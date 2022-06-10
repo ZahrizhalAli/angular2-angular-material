@@ -70,21 +70,26 @@
           format using Data Binding
         </p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          <a href="#" class="btn btn-primary my-2" (click)="triggerForm()"
+            >Tambah Data</a
+          >
         </p>
       </div>
     </div>
   </section>
-
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <app-tambah-data
+          *ngIf="showF"
+          (addData)="addData($event)"
+          (aturHide)="showF = false"
+        ></app-tambah-data>
+
         <div class="col" *ngFor="let data of listPerson">
           <app-card-component
-            (likeClicked)="thedata = $event"
+            (likeClicked)="getData(data)"
             [data]="data"
-            (click)="getData()"
           ></app-card-component>
         </div>
       </div>

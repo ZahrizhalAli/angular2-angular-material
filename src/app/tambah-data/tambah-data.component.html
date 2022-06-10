@@ -1,0 +1,57 @@
+<mat-card class="example-card">
+  <form class="example-form">
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First name</mat-label>
+            <input matInput #name />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Ex. 100 Main St" #address>
+1600 Amphitheatre Pkwy</textarea
+        >
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Company</mat-label>
+        <textarea matInput #company></textarea>
+      </mat-form-field>
+    </p>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>No HP</mat-label>
+            <input matInput placeholder="Ex. San Francisco" #nohp />
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Age</mat-label>
+            <input matInput #age type="number" />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <a
+        href="#"
+        class="btn btn-primary my-2"
+        (click)="tambahData(name, address, company, nohp, age)"
+        >Tambah Data</a
+      >
+    </p>
+    <p>
+      <a href="#" class="btn btn-primary my-2" (click)="setHide()">Cancel</a>
+    </p>
+  </form>
+</mat-card>

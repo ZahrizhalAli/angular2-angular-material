@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { dataPerson } from './card-component/dataPerson';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -168,19 +169,31 @@ export class AppComponent {
       like: 0,
     },
   ];
-
-  thedata: {
-    index: number;
-    picture: String;
+  showF: boolean = false;
+  triggerForm() {
+    this.showF = true;
+  }
+  getData(data: dataPerson) {
+    data.like += 1;
+  }
+  addData(data: {
     age: number;
-    name: String;
-    company: String;
-    phone: String;
-    address: String;
+    name: string;
+    company: string;
+    phone: string;
+    address: string;
     like?: number;
-  };
-
-  getData() {
-    this.thedata.like += 1;
+  }) {
+    this.listPerson.push({
+      index: this.listPerson.length,
+      picture: `https://picsum.photos/200?random=${this.listPerson.length}`,
+      age: data.age,
+      name: data.name,
+      company: data.company,
+      phone: data.phone,
+      address: data.address,
+      like: data.like,
+    });
+    this.showF = false;
   }
 }
